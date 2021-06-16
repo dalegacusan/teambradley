@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="index.css" />
+
+		<title>Team Bradley</title>
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-light main-bg-color">
+			<div class="container-fluid" style="padding: 0 100px">
+				<!-- Left Side -->
+				<a class="navbar-brand" href="#">
+					<img
+						src="/images/logo.png"
+						alt="Logo"
+						height="24"
+						class="align-text-top"
+						style="margin-right: 8px"
+					/>
+					Learning Management System
+				</a>
+
+				<!-- Right Side -->
+				<nav class="navbar navbar-expand-lg navbar-light main-bg-color">
+					<div class="container-fluid">
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<!-- Notifications Dropdown -->
+								<li class="nav-item dropdown" style="margin-right: 15px">
+									<a
+										class="nav-link"
+										href="#"
+										id="navbarDropdownNotifications"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span href="#" class="notification">
+											<img
+												src="/images/bell.png"
+												width="18px"
+												style="margin: -5px 5px 0 0"
+											/>
+											<span class="badge">3</span>
+										</span>
+										Notifications
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownNotifications"
+										style="width: 300px"
+									>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item text-wrap" href="#"
+												>• Quiz on DSTALGO in 7 days!</a
+											>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item text-wrap" href="#"
+												>• Announcement: Please make sure to submit your
+												assignments on time</a
+											>
+										</li>
+									</ul>
+								</li>
+								<!-- Profile/Logout Dropdown -->
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										id="navbarDropdownMenuLink"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<img
+											width="40px"
+											class="rounded-circle"
+											style="float: left; margin-top: -6px"
+											src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"
+										/>
+										<span style="margin: 0 5px 0 10px">John</span>
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink"
+									>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="#">My Profile</a>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="#">Logout</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</nav>
+
+		<!-- Body -->
+		<div class="container">
+			<!-- Student Statistics Cards -->
+			<div class="pt-5 pb-3">
+				<!-- First 3 Cards -->
+				<div class="row">
+					<!-- Courses To Do CARD -->
+					<div class="col-4">
+						<div class="card stat-card">
+							<div class="card-body">
+								<span class="text-center" style="display: block"
+									>28 Courses To Do</span
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Courses Completed CARD -->
+					<div class="col-4">
+						<div class="card stat-card">
+							<div class="card-body">
+								<span class="text-center" style="display: block"
+									>12 Courses Completed</span
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Units Taken CARD -->
+					<div class="col-4">
+						<div class="card stat-card">
+							<div class="card-body">
+								<span class="text-center" style="display: block"
+									>14.0/122.0 Units Taken</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<!-- Merged Cards -->
+				<div class="row">
+					<div class="col-12">
+						<div class="card stat-card">
+							<div class="card-body d-flex justify-content-around">
+								<span class="text-center pt-3 pb-3">7 Assignments Due</span>
+								<div
+									class="vl"
+									style="border-left: 1px solid rgba(0, 0, 0, 0.125)"
+								></div>
+								<span class="text-center pt-3 pb-3">2 Upcoming Quizzes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+
+			<!-- Courses Header -->
+			<div class="mt-5">
+				<div class="d-flex justify-content-between">
+					<h4>Let's continue learning, John</h4>
+					<a href="/">All my courses</a>
+				</div>
+			</div>
+
+			<!-- Courses CARDS -->
+			<div class="mt-3">
+				<!-- First 3 Cards -->
+				<div class="row">
+					<div class="col-4">
+						<!-- Course Card 1 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://cdn.pixabay.com/photo/2016/07/09/07/48/blue-sky-1505848_1280.jpg"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">ITINFRA</h5>
+										<p class="card-text">OTG003</p>
+										<p class="card-text">
+											<small class="text-muted">Third Term, SY 2020-2021</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<!-- Course Card 2 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80.jpg"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">PEFORTS</h5>
+										<p class="card-text">OTI003</p>
+										<p class="card-text">
+											<small class="text-muted"
+												>Second Term, SY 2019-2020</small
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<!-- Course Card 3 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">CSBLIFE</h5>
+										<p class="card-text">OTO000</p>
+										<p class="card-text">
+											<small class="text-muted">First Term, SY 2020-2021</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Last 3 Cards -->
+				<div class="row">
+					<div class="col-4">
+						<!-- Course Card 4 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://climate.nasa.gov/system/news_items/main_images/2990_9827327865_98e0f0dc2d_o.jpg"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">MANSTRA</h5>
+										<p class="card-text">OTO011</p>
+										<p class="card-text">
+											<small class="text-muted">Third Term, SY 2021-2022</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<!-- Course Card 5 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunrise-quotes-21-1586892331.jpg"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">ISELECT</h5>
+										<p class="card-text">OTI001</p>
+										<p class="card-text">
+											<small class="text-muted"
+												>Second Term, SY 2021-2022</small
+											>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<!-- Course Card 6 -->
+						<div class="card mb-3" style="max-width: 400px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										style="height: 130px; width: 120px; max-width: 120px"
+										src="https://images.unsplash.com/photo-1505322022379-7c3353ee6291?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmlnaHR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">INTEFIL</h5>
+										<p class="card-text">ODG303</p>
+										<p class="card-text">
+											<small class="text-muted">First Term, SY 2020-2021</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+			<!-- Announcements & Calendar -->
+			<div class="mt-4">
+				<div class="row">
+					<!-- Announcements Card -->
+					<div class="col-6">
+						<div class="card" style="height: 500px">
+							<div class="card-body" style="padding: 20px 30px">
+								<!-- Announcements & Posted Table -->
+								<div class="row mb-3">
+									<!-- Announcement Section -->
+									<div class="col-8">
+										<h4>Announcement</h4>
+									</div>
+									<!-- Date Posted Section -->
+									<div class="col-4">
+										<h4>Posted</h4>
+									</div>
+								</div>
+								<!-- Rows of Announcements -->
+								<div class="announcements">
+									<!-- One Row of Announcement and Date Posted Section -->
+									<div class="row" style="height: 80px">
+										<div class="col-8">
+											<!-- Announcement Card -->
+											<div style="font-size: 12px; margin: 5px 0">
+												<div class="row">
+													<div class="col-2">
+														<img
+															src="images/megaphone.png"
+															width="40"
+															style="margin-top: 13px"
+														/>
+													</div>
+													<div class="col-10">
+														<p
+															style="
+																margin: 2px 0;
+																padding: 0;
+																font-weight: bold;
+															"
+														>
+															Lorem ipsum dolor sit amet, consectetur adipiscing
+														</p>
+														<p style="margin: 0; padding: 0">
+															Duis aute irure dolor in reprehenderit in
+															voluptate velit esse cillum dolore eu fugiat nulla
+															pariatur
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-4">
+											<!-- Date Posted DIV -->
+											<div
+												style="font-size: 12px; height: 100px; margin: 20px 0"
+											>
+												<p>June 23, 2019 5:04 PM</p>
+											</div>
+										</div>
+									</div>
+									<!-- One Row of Announcement and Date Posted Section -->
+									<div class="row" style="height: 80px">
+										<div class="col-8">
+											<!-- Announcement Card -->
+											<div style="font-size: 12px; margin: 5px 0">
+												<div class="row">
+													<div class="col-2">
+														<img
+															src="images/megaphone.png"
+															width="40"
+															style="margin-top: 13px"
+														/>
+													</div>
+													<div class="col-10">
+														<p
+															style="
+																margin: 2px 0;
+																padding: 0;
+																font-weight: bold;
+															"
+														>
+															Excepteur sint occaecat cupidatat non proident
+														</p>
+														<p style="margin: 0; padding: 0">
+															ut perspiciatis unde omnis iste natus error sit
+															voluptatem accusantium doloremque laudantium
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-4">
+											<!-- Date Posted DIV -->
+											<div
+												style="font-size: 12px; height: 100px; margin: 20px 0"
+											>
+												<p>April 24, 2021 10:29 PM</p>
+											</div>
+										</div>
+									</div>
+									<!-- One Row of Announcement and Date Posted Section -->
+									<div class="row" style="height: 80px">
+										<div class="col-8">
+											<!-- Announcement Card -->
+											<div style="font-size: 12px; margin: 5px 0">
+												<div class="row">
+													<div class="col-2">
+														<img
+															src="images/megaphone.png"
+															width="40"
+															style="margin-top: 13px"
+														/>
+													</div>
+													<div class="col-10">
+														<p
+															style="
+																margin: 2px 0;
+																padding: 0;
+																font-weight: bold;
+															"
+														>
+															At vero eos et accusamus et iusto odio dignissimos
+														</p>
+														<p style="margin: 0; padding: 0">
+															est eligendi optio cumque nihil impedit quo minus
+															id quod maxime placeat
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-4">
+											<!-- Date Posted DIV -->
+											<div
+												style="font-size: 12px; height: 100px; margin: 20px 0"
+											>
+												<p>March 3, 2021 7:30 AM</p>
+											</div>
+										</div>
+									</div>
+									<!-- One Row of Announcement and Date Posted Section -->
+									<div class="row" style="height: 80px">
+										<div class="col-8">
+											<!-- Announcement Card -->
+											<div style="font-size: 12px; margin: 5px 0">
+												<div class="row">
+													<div class="col-2">
+														<img
+															src="images/megaphone.png"
+															width="40"
+															style="margin-top: 13px"
+														/>
+													</div>
+													<div class="col-10">
+														<p
+															style="
+																margin: 2px 0;
+																padding: 0;
+																font-weight: bold;
+															"
+														>
+															Nemo enim ipsam voluptatem quia voluptas
+														</p>
+														<p style="margin: 0; padding: 0">
+															sed quia consequuntur magni dolores eos qui
+															ratione voluptatem sequi nesciunt
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-4">
+											<!-- Date Posted DIV -->
+											<div
+												style="font-size: 12px; height: 100px; margin: 20px 0"
+											>
+												<p>February 12, 2021 12:30 PM</p>
+											</div>
+										</div>
+									</div>
+									<!-- One Row of Announcement and Date Posted Section -->
+									<div class="row" style="height: 80px">
+										<div class="col-8">
+											<!-- Announcement Card -->
+											<div style="font-size: 12px; margin: 5px 0">
+												<div class="row">
+													<div class="col-2">
+														<img
+															src="images/megaphone.png"
+															width="40"
+															style="margin-top: 13px"
+														/>
+													</div>
+													<div class="col-10">
+														<p
+															style="
+																margin: 2px 0;
+																padding: 0;
+																font-weight: bold;
+															"
+														>
+															Quis autem vel eum iure reprehenderit qui in ea
+															voluptate velit
+														</p>
+														<p style="margin: 0; padding: 0">
+															esse quam nihil molestiae consequatur, vel illum
+															qui dolorem
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-4">
+											<!-- Date Posted DIV -->
+											<div
+												style="font-size: 12px; height: 100px; margin: 20px 0"
+											>
+												<p>January 2, 2020 8:04 PM</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Calendar Card -->
+					<div class="col-6">
+						<div class="card" style="height: 500px">
+							<div class="card-body">Calendar.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<!-- Footer -->
+		<footer class="text-muted mt-5" style="background-color: white">
+			<div class="container p-5">
+				<p>Need assistance? <a href="#">Click here</a></p>
+				<div class="d-flex justify-content-between">
+					<p>
+						For more inquiries, please email
+						<a href="mailto:teambradley@gmail.com">teambradley@gmail.com</a>
+					</p>
+					<p>&copy; Team Bradley 2021. INC.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+	</body>
+</html>

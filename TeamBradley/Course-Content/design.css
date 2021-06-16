@@ -1,0 +1,79 @@
+
+h3{
+    margin-top:20px;
+    font-size: 20px;
+}
+
+#content-module{
+    display:none;
+}
+#coursename{
+    background-color: #808080;
+    font-weight: 10px;
+    padding:10px;
+    margin: 20px 5px;
+    text-align: center;
+}
+
+.list-group-item{
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+}
+.ul{
+    cursor: pointer;
+    font-size: 20px;
+    list-style-type: none;
+    margin-left:122px;
+}
+.time{
+    font-size: 10px;
+    color:#186070;
+}
+
+/* Navigation bar Design */
+body {
+    background-color: #f7f7f9;
+}
+
+.header-padding {
+    padding: 0 80px !important;
+}
+
+.main-bg-color {
+    /* background-color: #c4c4c4 !important; */
+    background-color: #ffff !important;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -8px;
+    right: -2px;
+    padding: 3px 5px;
+    border-radius: 25px;
+    background: red;
+    color: white;
+}
+
+.stat-card {
+    -webkit-box-shadow: 0 5px 5px -5px #777;
+    -moz-box-shadow: 0 5px 5px -5px #777;
+    box-shadow: 0 2px 2px -2px #777;
+}
+
+.dropdown-menu {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 5px 5px -5px #777;
+    -moz-box-shadow: 0 5px 5px -5px #777;
+    box-shadow: 0 2px 2px -2px #777;
+}
+
+.dropdown-menu-item {
+    background-color: rgb(255, 255, 255);
+}
