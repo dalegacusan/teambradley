@@ -9,15 +9,24 @@ let add = () => {
     let h = time.getHours(); 
     let m = time.getMinutes(); 
     let s = time.getSeconds(); 
-    let now = h + " : " + m + " : " + s;
+    let now = h + ":" + m + ":" + s;
     let list_item = document.createElement ("l1"); 
      
     list_item.innerHTML = `
-    <span>
-    
-    </span>
-    <p>${comment.value} ${now}</p>
-    <hr>
+    <div>
+        <div class="row">
+            <div class="col-2">
+                <img class="image-learn" src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"/>
+              
+            </div>
+            <div class="col-10">
+            <p style="margin-top:35px; font-weight:bold;">John Doe ${now}</p>
+            <p>${comment.value}</p>
+            <p style="color:#2097F3; cursor:pointer;">Reply</p>
+            <hr>
+            </div>
+        </div>
+    </div>
     `;
     list.append(list_item); 
     }
@@ -25,7 +34,7 @@ let add = () => {
     if (comment.value == "") {
     let list = document.querySelector('.list'); 
     let list_item = document.createElement ("l2"); 
-    var warn = 'Please a comment!';  
+    var warn = 'Please type a comment!';  
     list_item.innerHTML = `
     <span>
     <p>${warn}</p> 
@@ -38,27 +47,39 @@ let add = () => {
 //Module Content Clicker
 let button = (modulenumber)=>{
 
-    const show = document.getElementById("default");
+    const shows = document.getElementById("default");
     const def = document.getElementById("default1");
     const content = document.getElementById("content1");
 
+    
     if(modulenumber == 1)
     {
-        parent.document.getElementById("default1").src = "https://www.youtube.com/embed/zj-cLpCdWaM";
-        style.backgroundcolor = '#337ab7';
+        shows.style.display ='block';
+        content.style.display = 'none';
+        parent.document.getElementById("default1").src="https://www.youtube.com/embed/oigfaZ5ApsM";
+        
     }
     else if(modulenumber == 2)
     {
-        parent.document.getElementById("default1").src = "https://www.youtube.com/embed/-RJSbO8UZVY";
+        shows.style.display ='block';
+        content.style.display = 'none';
+        parent.document.getElementById("default1").src="https://www.youtube.com/embed/gnkrDse9QKc";
     }
     else if(modulenumber ==3){
-        parent.document.getElementById("default1").src = "files/JSP-Overview.pdf#toolbar=0";
+       shows.style.display="none";
+       content.style.display ="block";
     }
 }
+
 
 //Timer
 var start = document.querySelector(".start");
 var reset = document.querySelector(".reset");
+var pause = document.querySelector(".pause");
+
+var h = document.getElementById('h');
+var m = document.getElementById('m');
+var s = document.getElementById('s');
 
 var hour = document.querySelector(".hour");
 var minute = document.querySelector(".minute");
@@ -90,6 +111,14 @@ function StopTimer(){
     clearInterval(startTimer);
 }
 
+function PauseTime(){
+    clearTimeout(startTimer);
+    h.textContent = hour.value + ":";
+    m.textContent = minute.value + ":";
+    s.textContent = second.value;
+
+}
+
 start.addEventListener('click',function() { 
     //initial the variable startTimer
     function startInterval(){
@@ -107,9 +136,18 @@ reset.addEventListener('click', function(){
     StopTimer();
 })
 
+pause.addEventListener('click',function(){
+    PauseTime();
+})
+
 //Timer2
 var start2 = document.querySelector(".start2");
 var reset2 = document.querySelector(".reset2");
+var pause2 = document.querySelector(".pause2");
+
+var h2 = document.getElementById('h2');
+var m2 = document.getElementById('m2');
+var s2 = document.getElementById('s2');
 
 var hour2 = document.querySelector(".hour2");
 var minute2 = document.querySelector(".minute2");
@@ -141,6 +179,13 @@ function StopTimer2(){
     clearInterval(startTimer2);
 }
 
+function PauseTime2(){
+    clearTimeout(startTimer2);
+    h2.textContent = hour2.value + ":";
+    m2.textContent = minute2.value + ":";
+    s2.textContent = second2.value;
+}
+
 start2.addEventListener('click',function() { 
     //initial the variable startTimer
     function startInterval2(){
@@ -156,6 +201,10 @@ reset2.addEventListener('click', function(){
     minute2.value = 0;
     second2.value = 0;
     StopTimer2();
+})
+
+pause2.addEventListener('click',function(){
+    PauseTime2();
 })
 
 

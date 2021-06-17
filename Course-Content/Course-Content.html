@@ -136,22 +136,113 @@
     <!--Body-->
     <section id="bodylec" class="container">
 
-        <div id="coursename" class="row">
-            <div class="col-lg">
-                <h2>Course Name</h2>
-            </div>
-        </div>
+        <!-- Subject Menu Section -->
+			<div class="row mt-4 mb-2">
+				<div class="col-12">
+					<hr style="margin-bottom: 2px;"/>
+					<nav class="nav">
+						<a class="nav-link" href="#">Lessons</a>
+						<!-- Assessments Dropdown -->
+						<li class="nav-item dropdown" style="margin-right: 15px">
+							<a
+								class="nav-link"
+								href="#"
+								id="navbarDropdownAssessments"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								
+								Assessments
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownAssessments"
+								style="width: 300px"
+							>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Grades</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Calendar</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Quiz</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Dropbox</a
+									>
+								</li>
+							</ul>
+						</li>
+					</nav>
+					<hr style="margin-top: 2px;"/>
+				</div>
+			</div>
+			<!-- Header - SUBJECT NAME -->
+			<div class="row">
+				<div class="col-12">
+					<div class="card mb-4">
+						<div
+							class="card-body text-center fw-bold"
+							style="
+								background-image: url('https://image.freepik.com/free-photo/soft-transition-colors_23-2147734413.jpg');
+								background-size: cover;
+							"
+						>
+							<p class="fw-bold" id="titleContent" style="font-size: 22px; margin: 0;"></h4>
+						</div>
+					</div>
+				</div>
+			</div>
 
         <div class="row">
              <!--Lecture/Video-->
             <div class="col-lg-8">  
                 <div id="default">
-                    <iframe width="750" height="500" id="default1"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <iframe width="850" height="500" id="default1"
+                    src="https://www.youtube.com/embed/PkZNo7MFNFg">
                     </iframe>
                 </div>
-               
 
+                <div id="content1">
+                  <div id="title3">
+                    <h3>Module 3</h3>
+                    <hr>
+                  </div>
+                  <div class="contentText"> 
+                      <p style="font-weight:bold;">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p>
+                      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                         consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                          velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
+                          uis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in 
+                          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        
+                          <hr>
+
+                          <p style="font-weight:bold;">1914 translation by H. Rackham</p>
+                          <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+                             of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, 
+                             or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
+                              extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally 
+                              circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical
+                               exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+                                consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+                  </div>
+                </div>
+               
+              <!--Comment-->
                 <h3>Discussion/Comments</h3>
                 <hr>    
                 
@@ -162,6 +253,21 @@
                           <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="add()">Comment</button>
                         </div>
                       </div>
+                      <div>
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="image-learn" src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"/>
+                              
+                            </div>
+                            <div class="col-10">
+                            <p style="margin-top:35px; font-weight:bold;">Stephen Lance Bradley Nuyda 23:42:19</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p style="color:#2097F3; cursor:pointer;">Reply</p>
+                            <hr>
+                            </div>
+                        </div>
+                    </div>
                       <ul class="list"></ul>
                   </div>
             </div>
@@ -174,7 +280,7 @@
                             <span class="toggle1-btn collapse show">
                                 Lesson 1
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
+                              <p class="time"><span id="h">00:</span><span id="m">30:</span><span id="s">00</span></p>
                             </span>
                             <span class="toggle1-btn collapse ">
                                 Lesson 1 
@@ -190,6 +296,7 @@
 
                               <button class="start">Start</button>
                               <button class="reset">Reset</button>
+                              <button class="pause">Pause</button>
 
                            </div>
 
@@ -203,7 +310,8 @@
                                     <li onclick="button(2)" class="mod">Module 2</li>
                                     <li onclick="button(3)" class="mod">Module 3</li>
                                 </ul>
-  
+                                
+                      
                             </div>
                         </div>
                         
@@ -218,7 +326,7 @@
                             <span class="toggle2-btn collapse show">
                                 Lesson 2 
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time"><span id="h2">00:</span><span id="m2">30:</span><span id="s2">00</span></p>
                             </span>
                             <span class="toggle2-btn collapse">
                                 Lesson 2 
@@ -235,6 +343,7 @@
 
                               <button class="start2">Start</button>
                               <button class="reset2">Reset</button>
+                              <button class="pause2">Pause</button>
 
                            </div>
 
@@ -248,13 +357,13 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics3 .module5, .toggle3-btn" onclick="showtimer2()">
-                            <span class="toggle3-btn collapse show">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics3 .module5, .toggle3-btn" onclick="showtimer2()" style="background-color:#86e884;">
+                            <span class="toggle3-btn collapse show" style="color: #000; font-weight: bold;">
                                 Lesson 3
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time">00:00:00</p>
                             </span>
-                            <span class="toggle3-btn collapse">
+                            <span class="toggle3-btn collapse" style="color: #000; font-weight: bold;">
                                 Lesson 3
                               <i class="fas fa-chevron-up fa-sm"></i>
                             </span>
@@ -269,6 +378,7 @@
 
                             <button class="start2">Start</button>
                             <button class="reset2">Reset</button>
+                            <button class="pause2">Pause</button>
 
                          </div>
 
@@ -287,7 +397,7 @@
                             <span class="toggle4-btn collapse show">
                                 Lesson 4
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
                             </span>
                             <span class="toggle4-btn collapse">
                                 Lesson 4
@@ -317,13 +427,13 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics5 .module9, .toggle5-btn" onclick="showtimer4()">
-                            <span class="toggle5-btn collapse show">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics5 .module9, .toggle5-btn" onclick="showtimer4()" style="background-color:#86e884;">
+                            <span class="toggle5-btn collapse show" style="color: #000; font-weight: bold;">
                                 Lesson 5
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time">00:00:00</p>
                             </span>
-                            <span class="toggle5-btn collapse">
+                            <span class="toggle5-btn collapse" style="color: #000; font-weight: bold;">
                                 Lesson 5
                               <i class="fas fa-chevron-up fa-sm"></i>
                             </span>
@@ -338,6 +448,7 @@
 
                             <button class="start">Start</button>
                             <button class="reset">Reset</button>
+                            <button class="pause">Pause</button>
 
                          </div>
 
@@ -351,16 +462,15 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse">
-                            <span class="togglen-btn collapse show">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" style="background-color:#86e884;">
+                            <span class="togglen-btn collapse show" style="color: #000; font-weight: bold;">
                                 Lesson 6
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time">00:00:00</p>
                             </span>
-                            <span class="toggle-btn collapse">
+                            <span class="toggle-btn collapse" style="color: #000; font-weight: bold;">
                                 Lesson 6
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
 
@@ -370,7 +480,7 @@
                             <span class="togglen-btn collapse show">
                                 Lesson 7
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
                             </span>
                             <span class="toggle-btn collapse">
                                 Lesson 7
@@ -385,7 +495,7 @@
                             <span class="togglen-btn collapse show">
                                 Lesson 8
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
                             </span>
                             <span class="toggle-btn collapse">
                                 Lesson 8
@@ -435,5 +545,7 @@
     </section>
 
     <script src="javascript.js"></script> 
+    <script src="/GLOBALS/Global.js"></script>
+    
 </body>
 </html>
