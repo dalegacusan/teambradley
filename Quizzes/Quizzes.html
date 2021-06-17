@@ -29,9 +29,9 @@
     <nav class="navbar navbar-light main-bg-color">
         <div class="container-fluid" style="padding: 0 100px">
             <!-- Left Side -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/Dashboard/index.html">
                 <img
-                    src="/images/logo.png"
+                    src="/GLOBALS/images/logo.png"
                     alt="Logo"
                     height="24"
                     class="align-text-top"
@@ -39,7 +39,7 @@
                 />
                 Learning Management System
             </a>
-    
+
             <!-- Right Side -->
             <nav class="navbar navbar-expand-lg navbar-light main-bg-color">
                 <div class="container-fluid">
@@ -57,7 +57,7 @@
                                 >
                                     <span href="#" class="notification">
                                         <img
-                                            src="/images/bell.png"
+                                            src="/GLOBALS/images/bell.png"
                                             width="18px"
                                             style="margin: -5px 5px 0 0"
                                         />
@@ -88,7 +88,7 @@
                             <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle"
-                                    href="#"
+                                    href="/Profile/index.html"
                                     id="navbarDropdownMenuLink"
                                     role="button"
                                     data-bs-toggle="dropdown"
@@ -122,6 +122,62 @@
         </div>
     </nav>
 
+    <div class="container">
+        <!-- Subject Menu Section -->
+        <div class="row mt-4 mb-2">
+            <div class="col-12">
+                <hr style="margin-bottom: 2px;"/>
+                <nav class="nav">
+                    <a class="nav-link" href="#">Lessons</a>
+                    <!-- Assessments Dropdown -->
+                    <li class="nav-item dropdown" style="margin-right: 15px">
+                        <a
+                            class="nav-link"
+                            href="#"
+                            id="navbarDropdownAssessments"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            
+                            Assessments
+                        </a>
+                        <ul
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdownAssessments"
+                            style="width: 300px"
+                        >
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-item text-wrap" href="#"
+                                    >Grades</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-item text-wrap" href="#"
+                                    >Calendar</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-item text-wrap" href="#"
+                                    >Quiz</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-item text-wrap" href="#"
+                                    >Dropbox</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+                <hr style="margin-top: 2px;"/>
+            </div>
+        </div>
+    </div>
+    
     <section class="container">
         <div id="coursename" class="row">
             <div class="col-lg">
@@ -168,7 +224,7 @@
         </tbody>
     </table>
 
-    <!-- Footer -->
+		<!-- Footer -->
 		<footer class="text-muted mt-5" style="background-color: white">
 			<div class="container p-5">
 				<p>Need assistance? <a href="#">Click here</a></p>
