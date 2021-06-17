@@ -1,167 +1,154 @@
-
-h3{
-    margin-top:20px;
-    font-size: 20px;
+h3 {
+	margin-top: 20px;
+	font-size: 20px;
 }
 
-#content-module{
-    display:none;
+#content-module {
+	display: none;
 }
 /* Course name */
-#coursename{
-    background-color: #808080;
-    font-weight: 10px;
-    padding:10px;
-    margin: 20px 5px;
-    text-align: center;
+#coursename {
+	background-color: #808080;
+	font-weight: 10px;
+	padding: 10px;
+	margin: 20px 5px;
+	text-align: center;
 }
 
 /* Lesson */
-.mod{
-    padding:10px 0;
+.mod {
+	padding: 10px 0;
 }
 
-.list-group-item{
-    font-weight: bold;
-    padding:20px;
+.list-group-item {
+	font-weight: bold;
+	padding: 20px;
 }
-.ul{
-    cursor: pointer;
-    font-size: 20px;
-    list-style-type: none;
-    padding:20px
+.ul {
+	cursor: pointer;
+	font-size: 20px;
+	list-style-type: none;
+	padding: 20px;
 }
-.ul li{
-    padding-top:5px;
+.ul li {
+	padding-top: 5px;
 }
-.ul li:hover{
-    background-color:#ececec;
-    border-radius: 10px;
-    color: #000;
-    padding:10px;
+.ul li:hover {
+	background-color: #ececec;
+	border-radius: 10px;
+	color: #000;
+	padding: 10px;
 }
 
 /*Lesson Content*/
-#content1{
-    padding:20px;
-    display: none;
+#content1 {
+	padding: 20px;
+	display: none;
 }
-.time{
-    font-size: 10px;
-    color:#186070;
+.time {
+	font-size: 10px;
+	color: #186070;
 }
 
 /*Timer CSS */
-.timerjs{
-    margin:10px;
-    display:none;
+.timerjs {
+	margin: 10px;
+	display: none;
 }
-.timerjs1{
-    margin:10px;
-    display:none;
+.timerjs1 {
+	margin: 10px;
+	display: none;
 }
-.timerjs2{
-    margin:10px;
-    display:none;
+.timerjs2 {
+	margin: 10px;
+	display: none;
 }
-.timerjs3{
-    margin:10px;
-    display:none;
+.timerjs3 {
+	margin: 10px;
+	display: none;
 }
-.timerjs4{
-    margin:10px;
-    display:none;
+.timerjs4 {
+	margin: 10px;
+	display: none;
 }
-.timerjs .tim{
-    border: 0vmax;
-    outline:none;
-    text-decoration: underline;
+.timerjs .tim {
+	border: 0vmax;
+	outline: none;
+	text-decoration: underline;
 }
-.start{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
+.start {
+	background-color: rgb(72, 199, 72);
+	border: 1px solid green;
+	border-radius: 5px;
+	color: #fff;
 }
-.reset{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
+.reset {
+	background-color: rgb(221, 94, 94);
+	border: 1px solid red;
+	border-radius: 5px;
+	color: #fff;
 }
-.pause{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
-}
-.pause2{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
-}
-.start2{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
-}
-.reset2{
-    background-color:#808080 ;
-    border:0;
-    border-radius: 5px;
+.pause {
+	background-color: rgb(228, 175, 77);
+	border: 1px solid orange;
+	border-radius: 5px;
+	color: #fff;
 }
 
 /*Comment*/
 .image-learn {
-    width: 80%;
-    border-radius: 100%;
-    margin: 20px;
+	width: 80%;
+	border-radius: 100%;
+	margin: 20px;
 }
 
-#comment-design{
-    margin-right:10px;
+#comment-design {
+	margin-right: 10px;
 }
 
 /* Navigation bar Design */
 body {
-    background-color: #f7f7f9;
+	background-color: #f7f7f9;
 }
 
 .header-padding {
-    padding: 0 80px !important;
+	padding: 0 80px !important;
 }
 
 .main-bg-color {
-    /* background-color: #c4c4c4 !important; */
-    background-color: #ffff !important;
+	/* background-color: #c4c4c4 !important; */
+	background-color: #ffff !important;
 }
 
 .notification {
-    position: relative;
-    display: inline-block;
-    border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	border-radius: 2px;
 }
 
 .notification .badge {
-    position: absolute;
-    top: -8px;
-    right: -2px;
-    padding: 3px 5px;
-    border-radius: 25px;
-    background: red;
-    color: white;
+	position: absolute;
+	top: -8px;
+	right: -2px;
+	padding: 3px 5px;
+	border-radius: 25px;
+	background: red;
+	color: white;
 }
 
 .stat-card {
-    -webkit-box-shadow: 0 5px 5px -5px #777;
-    -moz-box-shadow: 0 5px 5px -5px #777;
-    box-shadow: 0 2px 2px -2px #777;
+	-webkit-box-shadow: 0 5px 5px -5px #777;
+	-moz-box-shadow: 0 5px 5px -5px #777;
+	box-shadow: 0 2px 2px -2px #777;
 }
 
 .dropdown-menu {
-    background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: 0 5px 5px -5px #777;
-    -moz-box-shadow: 0 5px 5px -5px #777;
-    box-shadow: 0 2px 2px -2px #777;
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 5px 5px -5px #777;
+	-moz-box-shadow: 0 5px 5px -5px #777;
+	box-shadow: 0 2px 2px -2px #777;
 }
 
 .dropdown-menu-item {
-    background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }

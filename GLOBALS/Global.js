@@ -1,7 +1,7 @@
 
-var titleC = document.getElementById('titleContent');
+const titleC = document.getElementById('titleContent');
 
-let course = (show)=>{
-    document.querySelector('.title').textContent = show.value;
-    
+let displayCourseName = () => {
+	const courseNameSection = localStorage.getItem("courseNameSection");
+	titleC.textContent = courseNameSection;
 }
