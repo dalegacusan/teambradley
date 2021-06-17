@@ -23,12 +23,12 @@ const CSBLIFE = {
 		{
 			eventDate: "October 19 11:59 PM",
 			eventName: "Week 4 Lab Act 04 - ArrayList",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		},
 		{
 			eventDate: "December 25 11:59 PM",
 			eventName: "Final Examination",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		}
 	],
 	nextSynchronousSession: {

@@ -22,12 +22,12 @@ const ITINFRA = {
 		{
 			eventDate: "January 24 12:00 PM",
 			eventName: "Income Statement",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		},
 		{
 			eventDate: "June 25 8:00 AM",
 			eventName: "Final Examination - Software Architecture",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		}
 	],
 	nextSynchronousSession: {
