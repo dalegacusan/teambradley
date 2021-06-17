@@ -54,3 +54,7 @@ body {
 .date {
 	color: #f54236;
 }
+
+.activeConsultationDay {
+	background-color: #86e884 !important;
+}

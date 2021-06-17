@@ -52,6 +52,42 @@ const DSTALGO = {
 		sessionTime: "10:00 - 11:00 am",
 		videoCallLink: "https://meet.google.com/szc-c23d-opc"
 	},
+	professor: {
+		firstName: "Olivia",
+		lastName: "Walter",
+		emailAddress: "olivia.walter@org.edu.xyz",
+		profilePictureLink: "https://lh3.googleusercontent.com/proxy/AmAvgRsfPztEHhjM2WSp6xxSGB9ZePdX5VSH-HxIOTecQOyYMxigIL7TMSnU2jpGgI8zuT1KpTjWtMuLu2pTlXBxs38KD9JB2J_Src69NCYkLA",
+		consultation: {
+			SUN: {
+				day: "SUN",
+				available: false
+			},
+			MON: {
+				day: "MON",
+				available: false
+			},
+			TUE: {
+				day: "TUE",
+				available: false
+			},
+			WED: {
+				day: "WED",
+				available: true
+			},
+			THUR: {
+				day: "THU",
+				available: true
+			},
+			FRI: {
+				day: "FRI",
+				available: true
+			},
+			SAT: {
+				day: "SAT",
+				available: false
+			}
+		}
+	}
 }
 
 const displayAnnouncements = () => {
@@ -136,6 +172,42 @@ const displayNextSyncSession = () => {
 	`
 }
 
+const displayCourseInstructor = () => {
+	const courseInstructorContainer = document.querySelector(".courseInstructorInformation");
+
+	courseInstructorContainer.innerHTML = `
+	<!-- Instructor Information -->
+	<div class="row">
+		<div class="col-2">
+			<img src="${DSTALGO.professor.profilePictureLink}" width="60" class="rounded-circle"/>
+		</div>
+		<div class="col-10">
+			<p style="margin: 4px 2px 0 2px;"><img src="/GLOBALS//images/user.png" width="16" style="margin: -3px 20px 0 0"/> ${DSTALGO.professor.firstName} ${DSTALGO.professor.lastName}</p>
+			<p style="margin: 0 2px;"><img src="/GLOBALS//images/email.png" width="16" style="margin: -3px 20px 0 0"/> <a href="mailto:${DSTALGO.professor.emailAddress}">${DSTALGO.professor.emailAddress}</a></p>
+		</div>
+	</div>
+	<!-- Consulatation -->
+	<div class="row mt-4">
+		<div class="col-12">
+			<h5 class="mb-3">Consultation</h5>
+			<table class="table table-bordered text-center" style="font-size: 12px; border: 1px solid #8B8B8B;">
+				<tbody>
+					<tr>
+						<td scope="col" class="${DSTALGO.professor.consultation.SUN.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.SUN.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.MON.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.MON.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.TUE.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.TUE.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.WED.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.WED.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.THUR.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.THUR.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.FRI.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.FRI.day}</td>
+						<td scope="col" class="${DSTALGO.professor.consultation.SAT.available && 'activeConsultationDay'}">${DSTALGO.professor.consultation.SAT.day}</td>
+					</tr>
+				</tbody>
+				</table>
+		</div>
+	</div>
+	`;
+}
+
 const displayUpcomingEvents = () => {
 	const upcomingEventsContainer = document.querySelector(".upcomingEventsContainer");
 
@@ -167,5 +239,6 @@ const displayUpcomingEvents = () => {
 const displaySubjectInformation = () => {
 	displayAnnouncements();
 	displayNextSyncSession();
+	displayCourseInstructor();
 	displayUpcomingEvents();
 }
