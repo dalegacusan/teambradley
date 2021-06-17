@@ -14,17 +14,18 @@
 		/>
 
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="../GLOBALS/styles.css" />
 
-		<title>Team Bradley</title>
+		<title>Home - LMS</title>
 	</head>
 	<body>
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-light main-bg-color">
 			<div class="container-fluid" style="padding: 0 100px">
 				<!-- Left Side -->
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="/Dashboard/index.html">
 					<img
-						src="/images/logo.png"
+						src="/GLOBALS/images/logo.png"
 						alt="Logo"
 						height="24"
 						class="align-text-top"
@@ -50,7 +51,7 @@
 									>
 										<span href="#" class="notification">
 											<img
-												src="/images/bell.png"
+												src="/GLOBALS/images/bell.png"
 												width="18px"
 												style="margin: -5px 5px 0 0"
 											/>
@@ -81,7 +82,7 @@
 								<li class="nav-item dropdown">
 									<a
 										class="nav-link dropdown-toggle"
-										href="#"
+										href="/Profile/index.html"
 										id="navbarDropdownMenuLink"
 										role="button"
 										data-bs-toggle="dropdown"
@@ -100,7 +101,9 @@
 										aria-labelledby="navbarDropdownMenuLink"
 									>
 										<li class="dropdown-menu-item">
-											<a class="dropdown-item" href="#">My Profile</a>
+											<a class="dropdown-item" href="../Profile/index.html"
+												>My Profile</a
+											>
 										</li>
 										<li><hr class="dropdown-divider" /></li>
 										<li class="dropdown-menu-item">
@@ -187,54 +190,85 @@
 					<div class="col-4">
 						<!-- Course Card 1 -->
 						<div class="card mb-3" style="max-width: 400px">
-							<div class="row g-0">
-								<div class="col-md-4">
-									<img
-										style="height: 130px; width: 120px; max-width: 120px"
-										src="https://cdn.pixabay.com/photo/2016/07/09/07/48/blue-sky-1505848_1280.jpg"
-										alt="..."
-									/>
-								</div>
-								<div class="col-md-8">
-									<div class="card-body">
-										<h5 class="card-title">ITINFRA</h5>
-										<p class="card-text">OTG003</p>
-										<p class="card-text">
-											<small class="text-muted">Third Term, SY 2020-2021</small>
-										</p>
+							<a
+								href="/CourseHome/DSTALGO/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img
+											style="height: 130px; width: 120px; max-width: 120px"
+											src="https://cdn.pixabay.com/photo/2016/07/09/07/48/blue-sky-1505848_1280.jpg"
+											alt="..."
+										/>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body course-card">
+											<h5 class="card-title">DSTALGO</h5>
+											<p class="card-text">OTG003 20214</p>
+											<p class="card-text">
+												<small class="text-muted"
+													>Third Term, SY 2020-2021</small
+												>
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-4">
 						<!-- Course Card 2 -->
 						<div class="card mb-3" style="max-width: 400px">
-							<div class="row g-0">
-								<div class="col-md-4">
-									<img
-										style="height: 130px; width: 120px; max-width: 120px"
-										src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80.jpg"
-										alt="..."
-									/>
-								</div>
-								<div class="col-md-8">
-									<div class="card-body">
-										<h5 class="card-title">PEFORTS</h5>
-										<p class="card-text">OTI003</p>
-										<p class="card-text">
-											<small class="text-muted"
-												>Second Term, SY 2019-2020</small
-											>
-										</p>
+							<a
+								href="/CourseHome/PEFORTS/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img
+											style="height: 130px; width: 120px; max-width: 120px"
+											src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80.jpg"
+											alt="..."
+										/>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body course-card">
+											<h5 class="card-title">PEFORTS</h5>
+											<p class="card-text">OTI004 21980</p>
+											<p class="card-text">
+												<small class="text-muted"
+													>Second Term, SY 2019-2020</small
+												>
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-4">
 						<!-- Course Card 3 -->
 						<div class="card mb-3" style="max-width: 400px">
+							<a
+								href="/CourseHome/CSBLIFE/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
 							<div class="row g-0">
 								<div class="col-md-4">
 									<img
@@ -244,15 +278,16 @@
 									/>
 								</div>
 								<div class="col-md-8">
-									<div class="card-body">
+									<div class="card-body course-card">
 										<h5 class="card-title">CSBLIFE</h5>
-										<p class="card-text">OTO000</p>
+										<p class="card-text">OTO000 201904</p>
 										<p class="card-text">
 											<small class="text-muted">First Term, SY 2020-2021</small>
 										</p>
 									</div>
 								</div>
 							</div>
+						</a>
 						</div>
 					</div>
 				</div>
@@ -261,6 +296,15 @@
 					<div class="col-4">
 						<!-- Course Card 4 -->
 						<div class="card mb-3" style="max-width: 400px">
+							<a
+								href="/CourseHome/MANSTRA/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
 							<div class="row g-0">
 								<div class="col-md-4">
 									<img
@@ -270,20 +314,30 @@
 									/>
 								</div>
 								<div class="col-md-8">
-									<div class="card-body">
+									<div class="card-body course-card">
 										<h5 class="card-title">MANSTRA</h5>
-										<p class="card-text">OTO011</p>
+										<p class="card-text">MANSTRA OTP012 202012</p>
 										<p class="card-text">
 											<small class="text-muted">Third Term, SY 2021-2022</small>
 										</p>
 									</div>
 								</div>
 							</div>
+						</a>
 						</div>
 					</div>
 					<div class="col-4">
 						<!-- Course Card 5 -->
 						<div class="card mb-3" style="max-width: 400px">
+							<a
+								href="/CourseHome/ITINFRA/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
 							<div class="row g-0">
 								<div class="col-md-4">
 									<img
@@ -293,9 +347,9 @@
 									/>
 								</div>
 								<div class="col-md-8">
-									<div class="card-body">
-										<h5 class="card-title">ISELECT</h5>
-										<p class="card-text">OTI001</p>
+									<div class="card-body course-card">
+										<h5 class="card-title">ITINFRA</h5>
+										<p class="card-text">ITINFRA OT0112 201918</p>
 										<p class="card-text">
 											<small class="text-muted"
 												>Second Term, SY 2021-2022</small
@@ -304,11 +358,21 @@
 									</div>
 								</div>
 							</div>
+						</a>
 						</div>
 					</div>
 					<div class="col-4">
 						<!-- Course Card 6 -->
 						<div class="card mb-3" style="max-width: 400px">
+							<a
+								href="/CourseHome/INTEFIL/index.html"
+								style="
+									text-decoration: none;
+									color: #000;
+									display: inline-block;
+								"
+								class="course-card-link"
+							>
 							<div class="row g-0">
 								<div class="col-md-4">
 									<img
@@ -318,15 +382,16 @@
 									/>
 								</div>
 								<div class="col-md-8">
-									<div class="card-body">
+									<div class="card-body course-card">
 										<h5 class="card-title">INTEFIL</h5>
-										<p class="card-text">ODG303</p>
+										<p class="card-text">ISD890 202289</p>
 										<p class="card-text">
 											<small class="text-muted">First Term, SY 2020-2021</small>
 										</p>
 									</div>
 								</div>
 							</div>
+							<a/>
 						</div>
 					</div>
 				</div>
@@ -362,7 +427,7 @@
 												<div class="row">
 													<div class="col-2">
 														<img
-															src="images/megaphone.png"
+															src="/GLOBALS/images/megaphone.png"
 															width="40"
 															style="margin-top: 13px"
 														/>
@@ -403,7 +468,7 @@
 												<div class="row">
 													<div class="col-2">
 														<img
-															src="images/megaphone.png"
+															src="/GLOBALS/images/megaphone.png"
 															width="40"
 															style="margin-top: 13px"
 														/>
@@ -443,7 +508,7 @@
 												<div class="row">
 													<div class="col-2">
 														<img
-															src="images/megaphone.png"
+															src="/GLOBALS/images/megaphone.png"
 															width="40"
 															style="margin-top: 13px"
 														/>
@@ -483,7 +548,7 @@
 												<div class="row">
 													<div class="col-2">
 														<img
-															src="images/megaphone.png"
+															src="/GLOBALS/images/megaphone.png"
 															width="40"
 															style="margin-top: 13px"
 														/>
@@ -523,7 +588,7 @@
 												<div class="row">
 													<div class="col-2">
 														<img
-															src="images/megaphone.png"
+															src="/GLOBALS/images/megaphone.png"
 															width="40"
 															style="margin-top: 13px"
 														/>

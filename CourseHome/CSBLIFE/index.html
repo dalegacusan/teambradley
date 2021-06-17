@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="../../GLOBALS/styles.css" />
+
+		<title>CSBLIFE - Course Home | LMS</title>
+	</head>
+	<body onLoad="displaySubjectInformation()">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-light main-bg-color">
+			<div class="container-fluid" style="padding: 0 100px">
+				<!-- Left Side -->
+				<a class="navbar-brand" href="/Dashboard/index.html">
+					<img
+						src="/GLOBALS/images/logo.png"
+						alt="Logo"
+						height="24"
+						class="align-text-top"
+						style="margin-right: 8px"
+					/>
+					Learning Management System
+				</a>
+
+				<!-- Right Side -->
+				<nav class="navbar navbar-expand-lg navbar-light main-bg-color">
+					<div class="container-fluid">
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<!-- Notifications Dropdown -->
+								<li class="nav-item dropdown" style="margin-right: 15px">
+									<a
+										class="nav-link"
+										href="#"
+										id="navbarDropdownNotifications"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span href="#" class="notification">
+											<img
+												src="/GLOBALS/images/bell.png"
+												width="18px"
+												style="margin: -5px 5px 0 0"
+											/>
+											<span class="badge">3</span>
+										</span>
+										Notifications
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownNotifications"
+										style="width: 300px"
+									>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item text-wrap" href="#"
+												>• Quiz on DSTALGO in 7 days!</a
+											>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item text-wrap" href="#"
+												>• Announcement: Please make sure to submit your
+												assignments on time</a
+											>
+										</li>
+									</ul>
+								</li>
+								<!-- Profile/Logout Dropdown -->
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="/Profile/index.html"
+										id="navbarDropdownMenuLink"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<img
+											width="40px"
+											class="rounded-circle"
+											style="float: left; margin-top: -6px"
+											src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"
+										/>
+										<span style="margin: 0 5px 0 10px">John</span>
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink"
+									>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="#">My Profile</a>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="#">Logout</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</nav>
+
+		<!-- Body -->
+		<div class="container">
+			<!-- Subject Menu Section -->
+			<div class="row mt-4 mb-2">
+				<div class="col-12">
+					<hr style="margin-bottom: 2px;"/>
+					<nav class="nav">
+						<a class="nav-link" href="#">Lessons</a>
+						<!-- Assessments Dropdown -->
+						<li class="nav-item dropdown" style="margin-right: 15px">
+							<a
+								class="nav-link"
+								href="#"
+								id="navbarDropdownAssessments"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								
+								Assessments
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownAssessments"
+								style="width: 300px"
+							>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Grades</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Calendar</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Quiz</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="#"
+										>Dropbox</a
+									>
+								</li>
+							</ul>
+						</li>
+					</nav>
+					<hr style="margin-top: 2px;"/>
+				</div>
+			</div>
+			<!-- Header - SUBJECT NAME -->
+			<div class="row">
+				<div class="col-12">
+					<div class="card mb-4">
+						<div
+							class="card-body text-center fw-bold"
+							style="
+								background-image: url('https://image.freepik.com/free-photo/soft-transition-colors_23-2147734413.jpg');
+								background-size: cover;
+							"
+						>
+							<p class="fw-bold" style="font-size: 22px; margin: 0;">CSBLIFE OTO000 201904</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-7">
+				<!-- Announcements Section -->
+					<div class="card mb-4">
+						<div class="card-body" style="padding: 20px 30px">
+							<div class="row mb-3">
+								<!-- Announcement Section -->
+								<div class="col-8">
+									<h4>Announcement</h4>
+								</div>
+								<!-- Date Posted Section -->
+								<div class="col-4">
+									<h4>Posted</h4>
+								</div>
+							</div>
+							<div class="announcements"></div>
+						</div>
+					</div>
+					<!-- Upcoming Events Section -->
+						<div class="card">
+							<div class="card-body" style="padding: 20px 30px">
+								<h4>Upcoming Events</h4>
+								<div
+									style="
+										border-bottom: 1px solid black;
+										width: 90px;
+										height: 7px;
+										margin-bottom: 14px;
+									"
+									class="mb-4"
+								>
+									&nbsp;
+								</div>
+								<div class="upcomingEventsContainer">
+									
+								</div>
+							</div>
+						</div>
+				</div>
+				<!-- Next Sync Session & Calendar Section -->
+				<div class="col-5">
+					<div class="card mb-4">
+						<!-- Next Sync Session Container -->
+						<div
+							class="card-body nextSyncSessionBodyContainer"
+							style="padding: 20px 30px"
+						></div>
+					</div>
+					<!-- Calendar -->
+					<div class="card" style="height: 500px">
+						<div class="card-body">Calendar.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="text-muted mt-5" style="background-color: white">
+			<div class="container p-5">
+				<p>Need assistance? <a href="#">Click here</a></p>
+				<div class="d-flex justify-content-between">
+					<p>
+						For more inquiries, please email
+						<a href="mailto:teambradley@gmail.com">teambradley@gmail.com</a>
+					</p>
+					<p>&copy; Team Bradley 2021. INC.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./index.js"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+	</body>
+</html>
