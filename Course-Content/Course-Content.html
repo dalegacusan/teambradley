@@ -146,7 +146,7 @@
              <!--Lecture/Video-->
             <div class="col-lg-8">  
                 <div id="default">
-                    <iframe width="850" height="500" id="default1"
+                    <iframe width="750" height="500" id="default1"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     </iframe>
                 </div>
@@ -170,26 +170,40 @@
             <div class="col-lg-4">
                 <div id="lessons">
                     <div class="list-group">
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics .module1, .toggle1-btn">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics .module1, .toggle1-btn" onclick="showtimer()">
                             <span class="toggle1-btn collapse show">
                                 Lesson 1
                               <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
+                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
                             </span>
                             <span class="toggle1-btn collapse ">
                                 Lesson 1 
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
+                             <!--Timer-->
+                            <div class="timerjs">
+                              
+                              <input class="hour" type="number" max="99" min="0" class="tim">
+                              <input class="minute" type="number" max="60" min="0" class="tim">
+                              <input class="seconds" type="number" max="60" min="0" class="tim">
+
+                              <button class="start">Start</button>
+                              <button class="reset">Reset</button>
+
+                           </div>
+
 
                           <div id="topics">
                             <div class="module1 collapse">
+
+                              <!--Module Clicker-->
                                 <ul class="ul">
-                                    <li onclick="button(1)" id="mod1">Module 1</li>
-                                    <li onclick="button(2)" id="mod2">Module 2</li>
-                                    <li onclick="button(3)" id="mod3">Module 3</li>
+                                    <li onclick="button(1)" class="mod">Module 1</li>
+                                    <li onclick="button(2)" class="mod">Module 2</li>
+                                    <li onclick="button(3)" class="mod">Module 3</li>
                                 </ul>
+  
                             </div>
                         </div>
                         
@@ -200,7 +214,7 @@
                         </div>
                         
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics2 .module3, .toggle2-btn">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics2 .module3, .toggle2-btn" onclick="showtimer1()">
                             <span class="toggle2-btn collapse show">
                                 Lesson 2 
                               <i class="fas fa-chevron-down fa-sm"></i>
@@ -209,9 +223,20 @@
                             <span class="toggle2-btn collapse">
                                 Lesson 2 
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
+
+                            <!--Timer-->
+                            <div class="timerjs1">
+                              
+                              <input class="hour2" type="number" max="99" min="0" class="tim">
+                              <input class="minute2" type="number" max="60" min="0" class="tim">
+                              <input class="seconds2" type="number" max="60" min="0" class="tim">
+
+                              <button class="start2">Start</button>
+                              <button class="reset2">Reset</button>
+
+                           </div>
 
                           <div id="topics2">
                             <div class="module3 collapse">
@@ -223,7 +248,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics3 .module5, .toggle3-btn">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics3 .module5, .toggle3-btn" onclick="showtimer2()">
                             <span class="toggle3-btn collapse show">
                                 Lesson 3
                               <i class="fas fa-chevron-down fa-sm"></i>
@@ -232,9 +257,21 @@
                             <span class="toggle3-btn collapse">
                                 Lesson 3
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
+
+                          <!--Timer-->
+                          <div class="timerjs2">
+                              
+                            <input class="hour2" type="number" max="99" min="0" class="tim">
+                            <input class="minute2" type="number" max="60" min="0" class="tim">
+                            <input class="seconds2" type="number" max="60" min="0" class="tim">
+
+                            <button class="start2">Start</button>
+                            <button class="reset2">Reset</button>
+
+                         </div>
+
 
                           <div id="topics3">
                             <div class="module5 collapse">
@@ -246,7 +283,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics4 .module7, .toggle4-btn">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics4 .module7, .toggle4-btn" onclick="showtimer3()">
                             <span class="toggle4-btn collapse show">
                                 Lesson 4
                               <i class="fas fa-chevron-down fa-sm"></i>
@@ -255,9 +292,20 @@
                             <span class="toggle4-btn collapse">
                                 Lesson 4
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
+
+                          <!--Timer-->
+                          <div class="timerjs3">
+                              
+                            <input class="hour" type="number" max="99" min="0" class="tim">
+                            <input class="minute" type="number" max="60" min="0" class="tim">
+                            <input class="seconds" type="number" max="60" min="0" class="tim">
+
+                            <button class="start">Start</button>
+                            <button class="reset">Reset</button>
+
+                         </div>
 
                           <div id="topics4">
                             <div class="module7 collapse">
@@ -269,7 +317,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics5 .module9, .toggle5-btn">
+                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics5 .module9, .toggle5-btn" onclick="showtimer4()">
                             <span class="toggle5-btn collapse show">
                                 Lesson 5
                               <i class="fas fa-chevron-down fa-sm"></i>
@@ -278,9 +326,20 @@
                             <span class="toggle5-btn collapse">
                                 Lesson 5
                               <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
                             </span>
                           </button>
+
+                           <!--Timer-->
+                           <div class="timerjs4">
+                              
+                            <input class="hour" type="number" max="99" min="0" class="tim">
+                            <input class="minute" type="number" max="60" min="0" class="tim">
+                            <input class="seconds" type="number" max="60" min="0" class="tim">
+
+                            <button class="start">Start</button>
+                            <button class="reset">Reset</button>
+
+                         </div>
 
                           <div id="topics5">
                             <div class="module9 collapse">
