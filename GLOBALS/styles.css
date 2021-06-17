@@ -58,3 +58,11 @@ body {
 .activeConsultationDay {
 	background-color: #86e884 !important;
 }
+
+.dot {
+	height: 7px;
+	width: 7px;
+	background-color: #a2b870;
+	border-radius: 50%;
+	display: inline-block;
+}
