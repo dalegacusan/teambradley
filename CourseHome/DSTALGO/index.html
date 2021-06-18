@@ -118,12 +118,23 @@
 
 		<!-- Body -->
 		<div class="container">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+					<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+				</symbol>
+			</svg>
+			<div class="alert alert-primary d-flex align-items-center mt-4" role="alert" style="width: 500px;">
+				<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+				<div>
+				You have a synchronous meeting in 10 minutes!
+				</div>
+			</div>
 			<!-- Subject Menu Section -->
-			<div class="row mt-4 mb-2">
+			<div class="row mt-3 mb-2">
 				<div class="col-12">
 					<hr style="margin-bottom: 2px;"/>
 					<nav class="nav">
-						<a class="nav-link" href="/Course-Content/Course-Content.html">Lessons</a>
+						<a class="nav-link" href="/Course-Content/Course-Content.html" onClick="localStorage.setItem('courseNameSection', 'DSTALGO OTI003 20214');">Lessons</a>
 						<!-- Assessments Dropdown -->
 						<li class="nav-item dropdown" style="margin-right: 15px">
 							<a
@@ -143,30 +154,31 @@
 								style="width: 300px"
 							>
 							<li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Grades/Grades.html"
+                                <a class="dropdown-item text-wrap" href="/Grades/Grades.html" onClick="localStorage.setItem('courseNameSection', 'DSTALGO OTI003 20214');"
                                     >Grades</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Calendar/Calendar.html"
+                                <a class="dropdown-item text-wrap" href="/Calendar/Calendar.html" onClick="localStorage.setItem('courseNameSection', 'DSTALGO OTI003 20214');"
                                     >Calendar</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Quizzes/Quizzes.html"
+                                <a class="dropdown-item text-wrap" href="/Quizzes/Quizzes.html" onClick="localStorage.setItem('courseNameSection', 'DSTALGO OTI003 20214');"
                                     >Quiz</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Drop-box/Drop-box.html"
+                                <a class="dropdown-item text-wrap" href="/Drop-box/Drop-box.html" onClick="localStorage.setItem('courseNameSection', 'DSTALGO OTI003 20214');"
                                     >Dropbox</a
                                 >
                             </li>
 							</ul>
 						</li>
+						<a class="nav-link" href="/ClassList/index.html">Class List</a>
 					</nav>
 					<hr style="margin-top: 2px;"/>
 				</div>
@@ -258,7 +270,38 @@
 					</div>
 					<!-- Calendar -->
 					<div class="card" style="height: 500px">
-						<div class="card-body">Calendar.</div>
+						<div class="card-body">
+							<div class="calendar">
+								<div class="calendar-header">
+									<span class="month-picker" id="month-picker">February</span>
+									<div class="year-picker">
+										<span class="year-change" id="prev-year">
+											<pre><</pre>
+										</span>
+										<span id="year">2021</span>
+										<span class="year-change" id="next-year">
+											<pre>></pre>
+										</span>
+									</div>
+								</div>
+								<div class="calendar-body">
+									<div class="calendar-week-day">
+										<div>Sun</div>
+										<div>Mon</div>
+										<div>Tue</div>
+										<div>Wed</div>
+										<div>Thu</div>
+										<div>Fri</div>
+										<div>Sat</div>
+									</div>
+									<div class="calendar-days"></div>
+								</div>
+								<div class="calendar-footer">
+									
+								</div>
+								<div class="month-list"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -287,6 +330,7 @@
 		></script>
 
 		<script src="./index.js"></script>
+		<script src="/GLOBALS/Global.js"></script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--

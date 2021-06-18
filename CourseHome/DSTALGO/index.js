@@ -33,17 +33,17 @@ const DSTALGO = {
 		{
 			eventDate: "June 19 11:59 PM",
 			eventName: "Week 6 Topic 01 Lab Act 02 - Generic List",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		},
 		{
 			eventDate: "June 24 10:00 AM",
 			eventName: "Encapsulation & Abstraction 3 Layer App",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		},
 		{
 			eventDate: "June 25 11:59 PM",
 			eventName: "Midterm Machine Project",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		}
 	],
 	nextSynchronousSession: {

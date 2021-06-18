@@ -1,12 +1,5 @@
 const students = [
 	{
-		name: "Doe, John Michael",
-		course: "BS-IS",
-		idNumber: "11902451",
-		role: "Student",
-		imageLink: "https://picsum.photos/id/213/40/40"
-	},
-	{
 		name: "Carson, Alexandra",
 		course: "IL-CX",
 		idNumber: "80870201",
@@ -145,6 +138,27 @@ const students = [
 		idNumber: "75383727",
 		role: "Student",
 		imageLink: "https://picsum.photos/id/200/40/40"
+	},
+	{
+		name: "Dunkley, Desiree",
+		course: "JF-TR",
+		idNumber: "63852575",
+		role: "Student",
+		imageLink: "https://picsum.photos/id/201/40/40"
+	},
+	{
+		name: "Barclay, Kyla",
+		course: "OD-TW",
+		idNumber: "29375102",
+		role: "Student",
+		imageLink: "https://picsum.photos/id/202/40/40"
+	},
+	{
+		name: "Hodson, Ramon",
+		course: "IOE-FD",
+		idNumber: "38591037",
+		role: "Student",
+		imageLink: "https://picsum.photos/id/203/40/40"
 	}
 ];
 
@@ -183,7 +197,7 @@ const generateClassList = () => {
 		td3.innerHTML = `${student.role === "Student" && `
 		<span class="badge bg-primary">Student</span> 
 		<span class="badge bg-success">${student.course}</span>
-		${Math.random() < 0.3 ? `<span class="badge bg-${bootstrapBadgeColors[generateRandomNumberForColor()]}">${randomAwards[randomNumberForAwards]}</span>` : ""}
+		${Math.random() < 0.4 ? `<span class="badge bg-${bootstrapBadgeColors[generateRandomNumberForColor()]}">${randomAwards[randomNumberForAwards]}</span>` : ""}
 		`}`;
 
 		newTr.appendChild(th);

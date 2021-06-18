@@ -123,7 +123,7 @@
 				<div class="col-12">
 					<hr style="margin-bottom: 2px;"/>
 					<nav class="nav">
-						<a class="nav-link" href="/Course-Content/Course-Content.html">Lessons</a>
+						<a class="nav-link" href="/Course-Content/Course-Content.html" onClick="localStorage.setItem('courseNameSection', 'PEFORTS OTI004 21980')">Lessons</a>
 						<!-- Assessments Dropdown -->
 						<li class="nav-item dropdown" style="margin-right: 15px">
 							<a
@@ -142,31 +142,32 @@
 								aria-labelledby="navbarDropdownAssessments"
 								style="width: 300px"
 							>
-							<li class="dropdown-menu-item"></li>
-                                <a class="dropdown-item text-wrap" href="/Grades/Grades.html"
+							<li class="dropdown-menu-item">
+                                <a class="dropdown-item text-wrap" href="/Grades/Grades.html" onClick="localStorage.setItem('courseNameSection', 'PEFORTS OTI004 21980')"
                                     >Grades</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Calendar/Calendar.html"
+                                <a class="dropdown-item text-wrap" href="/Calendar/Calendar.html" onClick="localStorage.setItem('courseNameSection', 'PEFORTS OTI004 21980')"
                                     >Calendar</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Quizzes/Quizzes.html"
+                                <a class="dropdown-item text-wrap" href="/Quizzes/Quizzes.html" onClick="localStorage.setItem('courseNameSection', 'PEFORTS OTI004 21980')"
                                     >Quiz</a
                                 >
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li class="dropdown-menu-item">
-                                <a class="dropdown-item text-wrap" href="/Drop-box/Drop-box.html"
+                                <a class="dropdown-item text-wrap" href="/Drop-box/Drop-box.html" onClick="localStorage.setItem('courseNameSection', 'PEFORTS OTI004 21980')"
                                     >Dropbox</a
                                 >
                             </li>
 							</ul>
 						</li>
+						<a class="nav-link" href="/ClassList/index.html">Class List</a>
 					</nav>
 					<hr style="margin-top: 2px;"/>
 				</div>
@@ -258,7 +259,38 @@
 					</div>
 					<!-- Calendar -->
 					<div class="card" style="height: 500px">
-						<div class="card-body">Calendar.</div>
+						<div class="card-body">
+							<div class="calendar">
+								<div class="calendar-header">
+									<span class="month-picker" id="month-picker">February</span>
+									<div class="year-picker">
+										<span class="year-change" id="prev-year">
+											<pre><</pre>
+										</span>
+										<span id="year">2021</span>
+										<span class="year-change" id="next-year">
+											<pre>></pre>
+										</span>
+									</div>
+								</div>
+								<div class="calendar-body">
+									<div class="calendar-week-day">
+										<div>Sun</div>
+										<div>Mon</div>
+										<div>Tue</div>
+										<div>Wed</div>
+										<div>Thu</div>
+										<div>Fri</div>
+										<div>Sat</div>
+									</div>
+									<div class="calendar-days"></div>
+								</div>
+								<div class="calendar-footer">
+									
+								</div>
+								<div class="month-list"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -287,6 +319,7 @@
 		></script>
 
 		<script src="./index.js"></script>
+		<script src="/GLOBALS/Global.js"></script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--

@@ -1,147 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bradley</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Course Content - LMS</title>
 
-    <!--OG BOOTSTRAP-->
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<!--OG BOOTSTRAP-->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!--BootStrap Ni Dale-->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-    crossorigin="anonymous"
-/>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"
-></script>
+		<!--BootStrap Ni Dale-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
 
-    <!--Font Awesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+		<!--Font Awesome-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
-       <!--CSS-->
-     <link rel="stylesheet" href="design.css">
+		<!--CSS-->
+		<link rel="stylesheet" href="design.css" />
+	</head>
+	<body onLoad="displayCourseName()">
+		<section id="header">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-light main-bg-color">
+				<div class="container-fluid" style="padding: 0 100px">
+					<!-- Left Side -->
+					<a class="navbar-brand" href="/Dashboard/index.html">
+						<img
+							src="/GLOBALS/images/logo.png"
+							alt="Logo"
+							height="24"
+							class="align-text-top"
+							style="margin-right: 8px"
+						/>
+						Learning Management System
+					</a>
 
-</head>
-
-    <section id="header">
-       <!-- NAVBAR -->
-		<nav class="navbar navbar-light main-bg-color">
-			<div class="container-fluid" style="padding: 0 100px">
-				<!-- Left Side -->
-				<a class="navbar-brand" href="#">
-					<img
-						src="/images/logo.png"
-						alt="Logo"
-						height="24"
-						class="align-text-top"
-						style="margin-right: 8px"
-					/>
-					Learning Management System
-				</a>
-
-				<!-- Right Side -->
-				<nav class="navbar navbar-expand-lg navbar-light main-bg-color">
-					<div class="container-fluid">
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<!-- Notifications Dropdown -->
-								<li class="nav-item dropdown" style="margin-right: 15px">
-									<a
-										class="nav-link"
-										href="#"
-										id="navbarDropdownNotifications"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										<span href="#" class="notification">
+					<!-- Right Side -->
+					<nav class="navbar navbar-expand-lg navbar-light main-bg-color">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<!-- Notifications Dropdown -->
+									<li class="nav-item dropdown" style="margin-right: 15px">
+										<a
+											class="nav-link"
+											href="#"
+											id="navbarDropdownNotifications"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											<span href="#" class="notification">
+												<img
+													src="/GLOBALS/images/bell.png"
+													width="18px"
+													style="margin: -5px 5px 0 0"
+												/>
+												<span class="badge">3</span>
+											</span>
+											Notifications
+										</a>
+										<ul
+											class="dropdown-menu"
+											aria-labelledby="navbarDropdownNotifications"
+											style="width: 300px"
+										>
+											<li class="dropdown-menu-item">
+												<a class="dropdown-item text-wrap" href="#"
+													>• Quiz on DSTALGO in 7 days!</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li class="dropdown-menu-item">
+												<a class="dropdown-item text-wrap" href="#"
+													>• Announcement: Please make sure to submit your
+													assignments on time</a
+												>
+											</li>
+										</ul>
+									</li>
+									<!-- Profile/Logout Dropdown -->
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											id="navbarDropdownMenuLink"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
 											<img
-												src="/images/bell.png"
-												width="18px"
-												style="margin: -5px 5px 0 0"
+												width="40px"
+												class="rounded-circle"
+												style="float: left; margin-top: -6px"
+												src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"
 											/>
-											<span class="badge">3</span>
-										</span>
-										Notifications
-									</a>
-									<ul
-										class="dropdown-menu"
-										aria-labelledby="navbarDropdownNotifications"
-										style="width: 300px"
-									>
-										<li class="dropdown-menu-item">
-											<a class="dropdown-item text-wrap" href="#"
-												>• Quiz on DSTALGO in 7 days!</a
-											>
-										</li>
-										<li><hr class="dropdown-divider" /></li>
-										<li class="dropdown-menu-item">
-											<a class="dropdown-item text-wrap" href="#"
-												>• Announcement: Please make sure to submit your
-												assignments on time</a
-											>
-										</li>
-									</ul>
-								</li>
-								<!-- Profile/Logout Dropdown -->
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										id="navbarDropdownMenuLink"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										<img
-											width="40px"
-											class="rounded-circle"
-											style="float: left; margin-top: -6px"
-											src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"
-										/>
-										<span style="margin: 0 5px 0 10px">John</span>
-									</a>
-									<ul
-										class="dropdown-menu"
-										aria-labelledby="navbarDropdownMenuLink"
-									>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-item" href="/Profile/index.html">My Profile</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li class="dropdown-menu-item">
-                    <a class="dropdown-item" href="/Login/Login.html">Logout</a>
-                </li>
-									</ul>
-								</li>
-							</ul>
+											<span style="margin: 0 5px 0 10px">John</span>
+										</a>
+										<ul
+											class="dropdown-menu"
+											aria-labelledby="navbarDropdownMenuLink"
+										>
+											<li class="dropdown-menu-item">
+												<a class="dropdown-item" href="/Profile/index.html"
+													>My Profile</a
+												>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li class="dropdown-menu-item">
+												<a class="dropdown-item" href="/Login/Login.html"
+													>Logout</a
+												>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
-		</nav>
-    </section>
+					</nav>
+				</div>
+			</nav>
+		</section>
 
-    <!--Body-->
-    <section id="bodylec" class="container">
-
-        <!-- Subject Menu Section -->
+		<!--Body-->
+		<section id="bodylec" class="container">
+			<!-- Subject Menu Section -->
 			<div class="row mt-4 mb-2">
 				<div class="col-12">
-					<hr style="margin-bottom: 2px;"/>
+					<hr style="margin-bottom: 2px" />
 					<nav class="nav">
-						<a class="nav-link" href="/Course-Content/Course-Content.html">Lessons</a>
+						<a class="nav-link" href="/Course-Content/Course-Content.html"
+							>Lessons</a
+						>
 						<!-- Assessments Dropdown -->
 						<li class="nav-item dropdown" style="margin-right: 15px">
 							<a
@@ -152,7 +157,6 @@
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								
 								Assessments
 							</a>
 							<ul
@@ -160,33 +164,40 @@
 								aria-labelledby="navbarDropdownAssessments"
 								style="width: 300px"
 							>
-              <li class="dropdown-menu-item">
-								<a class="dropdown-item text-wrap" href="/Grades/Grades.html"
-									>Grades</a
-								>
-							</li>
-							<li><hr class="dropdown-divider" /></li>
-							<li class="dropdown-menu-item">
-								<a class="dropdown-item text-wrap" href="/Calendar/Calendar.html"
-									>Calendar</a
-								>
-							</li>
-							<li><hr class="dropdown-divider" /></li>
-							<li class="dropdown-menu-item">
-								<a class="dropdown-item text-wrap" href="/Quizzes/Quizzes.html"
-									>Quiz</a
-								>
-							</li>
-							<li><hr class="dropdown-divider" /></li>
-							<li class="dropdown-menu-item">
-								<a class="dropdown-item text-wrap" href="/Drop-box/Drop-box.html"
-									>Dropbox</a
-								>
-							</li>
+								<li class="dropdown-menu-item">
+									<a class="dropdown-item text-wrap" href="/Grades/Grades.html"
+										>Grades</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a
+										class="dropdown-item text-wrap"
+										href="/Calendar/Calendar.html"
+										>Calendar</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a
+										class="dropdown-item text-wrap"
+										href="/Quizzes/Quizzes.html"
+										>Quiz</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li class="dropdown-menu-item">
+									<a
+										class="dropdown-item text-wrap"
+										href="/Drop-box/Drop-box.html"
+										>Dropbox</a
+									>
+								</li>
 							</ul>
 						</li>
+						<a class="nav-link" href="/ClassList/index.html">Class List</a>
 					</nav>
-					<hr style="margin-top: 2px;"/>
+					<hr style="margin-top: 2px" />
 				</div>
 			</div>
 			<!-- Header - SUBJECT NAME -->
@@ -196,356 +207,560 @@
 						<div
 							class="card-body text-center fw-bold"
 							style="
-								background-image: url('https://image.freepik.com/free-photo/soft-transition-colors_23-2147734413.jpg');
+								background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9X6t0Mnl55lpdNYfoZQbP7gYuYrJ9GNAsg&usqp=CAU');
 								background-size: cover;
 							"
 						>
-							<p class="fw-bold" id="titleContent" style="font-size: 22px; margin: 0;"></h4>
+							<p
+								class="fw-bold"
+								id="titleContent"
+								style="font-size: 22px; margin: 0"
+							></p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-        <div class="row">
-             <!--Lecture/Video-->
-            <div class="col-lg-8">  
-                <div id="default">
-                    <iframe width="850" height="500" id="default1"
-                    src="https://www.youtube.com/embed/PkZNo7MFNFg">
-                    </iframe>
-                </div>
+			<div class="row">
+				<!--Lecture/Video-->
+				<div class="col-lg-8">
+					<div id="default">
+						<iframe
+							width="850"
+							height="500"
+							id="default1"
+							src="https://www.youtube.com/embed/PkZNo7MFNFg"
+						>
+						</iframe>
+					</div>
 
-                <div id="content1">
-                  <div id="title3">
-                    <h3>Module 3</h3>
-                    <hr>
-                  </div>
-                  <div class="contentText"> 
-                      <p style="font-weight:bold;">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p>
-                      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                         consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                          velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
-                          uis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in 
-                          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-                        
-                          <hr>
+					<div id="content1">
+						<div id="title3">
+							<h3>Module 3</h3>
+							<hr />
+						</div>
+						<div class="contentText">
+							<p style="font-weight: bold">
+								Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+								Cicero in 45 BC
+							</p>
+							<p>
+								"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+								quae ab illo inventore veritatis et quasi architecto beatae
+								vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+								voluptas sit aspernatur aut odit aut fugit, sed quia
+								consequuntur magni dolores eos qui ratione voluptatem sequi
+								nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+								sit amet, consectetur, adipisci velit, sed quia non numquam eius
+								modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+								voluptatem. Ut enim ad minima veniam, uis nostrum exercitationem
+								ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+								commodi consequatur? Quis autem vel eum iure reprehenderit qui
+								in ea voluptate velit esse quam nihil molestiae consequatur, vel
+								illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+							</p>
 
-                          <p style="font-weight:bold;">1914 translation by H. Rackham</p>
-                          <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
-                             of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, 
-                             or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-                              extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally 
-                              circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical
-                               exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
-                                consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-                  </div>
-                </div>
-               
-              <!--Comment-->
-                <h3>Discussion/Comments</h3>
-                <hr>    
-                
-                  <div class="row">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Comment" aria-label="Recipient's username" aria-describedby="button-addon2" id="comment">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="add()">Comment</button>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="image-learn" src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"/>
-                              
-                            </div>
-                            <div class="col-10">
-                            <p style="margin-top:35px; font-weight:bold;">Stephen Lance Bradley Nuyda 23:42:19</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p style="color:#2097F3; cursor:pointer;">Reply</p>
-                            <hr>
-                            </div>
-                        </div>
-                    </div>
-                      <ul class="list"></ul>
-                  </div>
-            </div>
+							<hr />
 
-            <!--Lesson-->
-            <div class="col-lg-4">
-                <div id="lessons">
-                    <div class="list-group">
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics .module1, .toggle1-btn" onclick="showtimer()">
-                            <span class="toggle1-btn collapse show">
-                                Lesson 1
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h">00:</span><span id="m">30:</span><span id="s">00</span></p>
-                            </span>
-                            <span class="toggle1-btn collapse ">
-                                Lesson 1 
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
-                             <!--Timer-->
-                            <div class="timerjs">
-                              
-                              <input class="hour" type="number" max="99" min="0" class="tim">
-                              <input class="minute" type="number" max="60" min="0" class="tim">
-                              <input class="seconds" type="number" max="60" min="0" class="tim">
+							<p style="font-weight: bold">1914 translation by H. Rackham</p>
+							<p>
+								"But I must explain to you how all this mistaken idea of
+								denouncing pleasure and praising pain was born and I will give
+								you a complete account of the system, and expound the actual
+								teachings of the great explorer of the truth, the master-builder
+								of human happiness. No one rejects, dislikes, or avoids pleasure
+								itself, because it is pleasure, but because those who do not
+								know how to pursue pleasure rationally encounter consequences
+								that are extremely painful. Nor again is there anyone who loves
+								or pursues or desires to obtain pain of itself, because it is
+								pain, but because occasionally circumstances occur in which toil
+								and pain can procure him some great pleasure. To take a trivial
+								example, which of us ever undertakes laborious physical
+								exercise, except to obtain some advantage from it? But who has
+								any right to find fault with a man who chooses to enjoy a
+								pleasure that has no annoying consequences, or one who avoids a
+								pain that produces no resultant pleasure?"
+							</p>
+						</div>
+					</div>
 
-                              <button class="start">Start</button>
-                              <button class="reset">Reset</button>
-                              <button class="pause">Pause</button>
+					<!--Comment-->
+					<h3>Discussion/Comments</h3>
+					<hr />
 
-                           </div>
+					<div class="row">
+						<div class="input-group mb-3">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Comment"
+								aria-label="Recipient's username"
+								aria-describedby="button-addon2"
+								id="comment"
+							/>
+							<div class="input-group-append">
+								<button
+									class="btn btn-outline-secondary"
+									type="button"
+									id="button-addon2"
+									onclick="add()"
+								>
+									Comment
+								</button>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-2">
+									<img
+										class="image-learn"
+										src="https://www.doesport.co.uk/wp-content/uploads/2017/11/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-illustration-58249394.jpg"
+									/>
+								</div>
+								<div class="col-10">
+									<p style="margin-top: 35px; font-weight: bold">
+										Stephen Lance Bradley Nuyda 23:42:19
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									</p>
+									<p style="color: #2097f3; cursor: pointer">Reply</p>
+									<hr />
+								</div>
+							</div>
+						</div>
+						<ul class="list"></ul>
+					</div>
+				</div>
 
+				<!--Lesson-->
+				<div class="col-lg-4">
+					<div id="lessons">
+						<div class="list-group">
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								data-target="#topics .module1, .toggle1-btn"
+								onclick="showtimer()"
+							>
+								<span class="toggle1-btn collapse show">
+									Lesson 1
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">
+										<span id="h">00:</span><span id="m">30:</span
+										><span id="s">00</span>
+									</p>
+								</span>
+								<span class="toggle1-btn collapse">
+									Lesson 1
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
+							<!--Timer-->
+							<div class="timerjs">
+								<input
+									class="hour"
+									type="number"
+									max="99"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="minute"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="seconds"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
 
-                          <div id="topics">
-                            <div class="module1 collapse">
+								<button class="start">Start</button>
+								<button class="reset">Reset</button>
+								<button class="pause">Pause</button>
+							</div>
 
-                              <!--Module Clicker-->
-                                <ul class="ul">
-                                    <li onclick="button(1)" class="mod">Module 1</li>
-                                    <li onclick="button(2)" class="mod">Module 2</li>
-                                    <li onclick="button(3)" class="mod">Module 3</li>
-                                </ul>
-                                
-                      
-                            </div>
-                        </div>
-                        
-                        <div id="content-module">
-                            <iframe width="850" height="500" id="content1"
-                            src="https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=4s">
-                            </iframe> 
-                        </div>
-                        
+							<div id="topics">
+								<div class="module1 collapse">
+									<!--Module Clicker-->
+									<ul class="ul">
+										<li onclick="button(1)" class="mod">Module 1</li>
+										<li onclick="button(2)" class="mod">Module 2</li>
+										<li onclick="button(3)" class="mod">Module 3</li>
+									</ul>
+								</div>
+							</div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics2 .module3, .toggle2-btn" onclick="showtimer1()">
-                            <span class="toggle2-btn collapse show">
-                                Lesson 2 
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h2">00:</span><span id="m2">30:</span><span id="s2">00</span></p>
-                            </span>
-                            <span class="toggle2-btn collapse">
-                                Lesson 2 
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
+							<div id="content-module">
+								<iframe
+									width="850"
+									height="500"
+									id="content1"
+									src="https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=4s"
+								>
+								</iframe>
+							</div>
 
-                            <!--Timer-->
-                            <div class="timerjs1">
-                              
-                              <input class="hour2" type="number" max="99" min="0" class="tim">
-                              <input class="minute2" type="number" max="60" min="0" class="tim">
-                              <input class="seconds2" type="number" max="60" min="0" class="tim">
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								data-target="#topics2 .module3, .toggle2-btn"
+								onclick="showtimer1()"
+							>
+								<span class="toggle2-btn collapse show">
+									Lesson 2
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">
+										<span id="h2">00:</span><span id="m2">30:</span
+										><span id="s2">00</span>
+									</p>
+								</span>
+								<span class="toggle2-btn collapse">
+									Lesson 2
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
 
-                              <button class="start2">Start</button>
-                              <button class="reset2">Reset</button>
-                              <button class="pause2">Pause</button>
+							<!--Timer-->
+							<div class="timerjs1">
+								<input
+									class="hour2"
+									type="number"
+									max="99"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="minute2"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="seconds2"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
 
-                           </div>
+								<button class="start2 start">Start</button>
+								<button class="reset2 reset">Reset</button>
+								<button class="pause2 pause">Pause</button>
+							</div>
 
-                          <div id="topics2">
-                            <div class="module3 collapse">
-                                <ul class="ul">
-                                    <li>Module 1</li>
-                                    <li>Module 2</li>
-                                    <li>Module 3</li>
-                                </ul>
-                            </div>
-                        </div>
+							<div id="topics2">
+								<div class="module3 collapse">
+									<ul class="ul">
+										<li>Module 1</li>
+										<li>Module 2</li>
+										<li>Module 3</li>
+									</ul>
+								</div>
+							</div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics3 .module5, .toggle3-btn" onclick="showtimer2()" style="background-color:#86e884;">
-                            <span class="toggle3-btn collapse show" style="color: #000; font-weight: bold;">
-                                Lesson 3
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">00:00:00</p>
-                            </span>
-                            <span class="toggle3-btn collapse" style="color: #000; font-weight: bold;">
-                                Lesson 3
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								data-target="#topics3 .module5, .toggle3-btn"
+								onclick="showtimer2()"
+								style="background-color: #86e884"
+							>
+								<span
+									class="toggle3-btn collapse show"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 3
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">00:00:00</p>
+								</span>
+								<span
+									class="toggle3-btn collapse"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 3
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
 
-                          <!--Timer-->
-                          <div class="timerjs2">
-                              
-                            <input class="hour2" type="number" max="99" min="0" class="tim">
-                            <input class="minute2" type="number" max="60" min="0" class="tim">
-                            <input class="seconds2" type="number" max="60" min="0" class="tim">
+							<!--Timer-->
+							<div class="timerjs2">
+								<input
+									class="hour2"
+									type="number"
+									max="99"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="minute2"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="seconds2"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
 
-                            <button class="start2">Start</button>
-                            <button class="reset2">Reset</button>
-                            <button class="pause2">Pause</button>
+								<button class="start">Start</button>
+								<button class="reset">Reset</button>
+								<button class="pause">Pause</button>
+							</div>
 
-                         </div>
+							<div id="topics3">
+								<div class="module5 collapse">
+									<ul class="ul">
+										<li>Module 1</li>
+										<li>Module 2</li>
+										<li>Module 3</li>
+									</ul>
+								</div>
+							</div>
 
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								data-target="#topics4 .module7, .toggle4-btn"
+								onclick="showtimer3()"
+							>
+								<span class="toggle4-btn collapse show">
+									Lesson 4
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">
+										<span id="h">00:</span>30:<span id="m">00</span
+										><span id="s"></span>
+									</p>
+								</span>
+								<span class="toggle4-btn collapse">
+									Lesson 4
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
 
-                          <div id="topics3">
-                            <div class="module5 collapse">
-                                <ul class="ul">
-                                    <li>Module 1</li>
-                                    <li>Module 2</li>
-                                    <li>Module 3</li>
-                                </ul>
-                            </div>
-                        </div>
+							<!--Timer-->
+							<div class="timerjs3">
+								<input
+									class="hour"
+									type="number"
+									max="99"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="minute"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="seconds"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics4 .module7, .toggle4-btn" onclick="showtimer3()">
-                            <span class="toggle4-btn collapse show">
-                                Lesson 4
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
-                            </span>
-                            <span class="toggle4-btn collapse">
-                                Lesson 4
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
+								<button class="start">Start</button>
+								<button class="reset">Reset</button>
+								<button class="pause">Pause</button>
+							</div>
 
-                          <!--Timer-->
-                          <div class="timerjs3">
-                              
-                            <input class="hour" type="number" max="99" min="0" class="tim">
-                            <input class="minute" type="number" max="60" min="0" class="tim">
-                            <input class="seconds" type="number" max="60" min="0" class="tim">
+							<div id="topics4">
+								<div class="module7 collapse">
+									<ul class="ul">
+										<li>Module 1</li>
+										<li>Module 2</li>
+										<li>Module 3</li>
+									</ul>
+								</div>
+							</div>
 
-                            <button class="start">Start</button>
-                            <button class="reset">Reset</button>
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								data-target="#topics5 .module9, .toggle5-btn"
+								onclick="showtimer4()"
+								style="background-color: #86e884"
+							>
+								<span
+									class="toggle5-btn collapse show"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 5
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">00:00:00</p>
+								</span>
+								<span
+									class="toggle5-btn collapse"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 5
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
 
-                         </div>
+							<!--Timer-->
+							<div class="timerjs4">
+								<input
+									class="hour"
+									type="number"
+									max="99"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="minute"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
+								<input
+									class="seconds"
+									type="number"
+									max="60"
+									min="0"
+									class="tim"
+								/>
 
-                          <div id="topics4">
-                            <div class="module7 collapse">
-                                <ul class="ul">
-                                    <li>Module 1</li>
-                                    <li>Module 2</li>
-                                    <li>Module 3</li>
-                                </ul>
-                            </div>
-                        </div>
+								<button class="start">Start</button>
+								<button class="reset">Reset</button>
+								<button class="pause">Pause</button>
+							</div>
 
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#topics5 .module9, .toggle5-btn" onclick="showtimer4()" style="background-color:#86e884;">
-                            <span class="toggle5-btn collapse show" style="color: #000; font-weight: bold;">
-                                Lesson 5
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">00:00:00</p>
-                            </span>
-                            <span class="toggle5-btn collapse" style="color: #000; font-weight: bold;">
-                                Lesson 5
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
+							<div id="topics5">
+								<div class="module9 collapse">
+									<ul class="ul">
+										<li>Module 1</li>
+										<li>Module 2</li>
+										<li>Module 3</li>
+									</ul>
+								</div>
+							</div>
 
-                           <!--Timer-->
-                           <div class="timerjs4">
-                              
-                            <input class="hour" type="number" max="99" min="0" class="tim">
-                            <input class="minute" type="number" max="60" min="0" class="tim">
-                            <input class="seconds" type="number" max="60" min="0" class="tim">
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+								style="background-color: #86e884"
+							>
+								<span
+									class="togglen-btn collapse show"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 6
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">00:00:00</p>
+								</span>
+								<span
+									class="toggle-btn collapse"
+									style="color: #000; font-weight: bold"
+								>
+									Lesson 6
+									<i class="fas fa-chevron-up fa-sm"></i>
+								</span>
+							</button>
 
-                            <button class="start">Start</button>
-                            <button class="reset">Reset</button>
-                            <button class="pause">Pause</button>
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+							>
+								<span class="togglen-btn collapse show">
+									Lesson 7
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">
+										<span id="h">00:</span>30:<span id="m">00</span
+										><span id="s"></span>
+									</p>
+								</span>
+								<span class="toggle-btn collapse">
+									Lesson 7
+									<i class="fas fa-chevron-up fa-sm"></i>
+									<p class="time">30:00</p>
+								</span>
+							</button>
 
-                         </div>
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+							>
+								<span class="togglen-btn collapse show">
+									Lesson 8
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">
+										<span id="h">00:</span>30:<span id="m">00</span
+										><span id="s"></span>
+									</p>
+								</span>
+								<span class="toggle-btn collapse">
+									Lesson 8
+									<i class="fas fa-chevron-up fa-sm"></i>
+									<p class="time">30:00</p>
+								</span>
+							</button>
 
-                          <div id="topics5">
-                            <div class="module9 collapse">
-                                <ul class="ul">
-                                    <li>Module 1</li>
-                                    <li>Module 2</li>
-                                    <li>Module 3</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" style="background-color:#86e884;">
-                            <span class="togglen-btn collapse show" style="color: #000; font-weight: bold;">
-                                Lesson 6
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">00:00:00</p>
-                            </span>
-                            <span class="toggle-btn collapse" style="color: #000; font-weight: bold;">
-                                Lesson 6
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                            </span>
-                          </button>
-
-                         
-
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse">
-                            <span class="togglen-btn collapse show">
-                                Lesson 7
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
-                            </span>
-                            <span class="toggle-btn collapse">
-                                Lesson 7
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
-                            </span>
-                          </button>
-
-                         
-
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse">
-                            <span class="togglen-btn collapse show">
-                                Lesson 8
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time"><span id="h">00:</span>30:<span id="m">00</span><span id="s"></span></p>
-                            </span>
-                            <span class="toggle-btn collapse">
-                                Lesson 8
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
-                            </span>
-                          </button>
-
-                         
-
-                        <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse">
-                            <span class="toggle-btn collapse show">
-                                Lesson 9
-                              <i class="fas fa-chevron-down fa-sm"></i>
-                              <p class="time">30:00</p>
-                            </span>
-                            <span class="toggle-btn collapse">
-                                Lesson 9
-                              <i class="fas fa-chevron-up fa-sm"></i>
-                              <p class="time">30:00</p>
-                            </span>
-                          </button>
-                        
-                    </div>
-                </div>
-            </div>
-       </div>
-
-    </section>
-
-    <!-- Footer -->
-    <section id="Footer">
-       
-		<footer class="text-muted mt-5" style="background-color: white">
-			<div class="container p-5">
-				<p>Need assistance? <a href="#">Click here</a></p>
-				<div class="d-flex justify-content-between">
-					<p>
-						For more inquiries, please email
-						<a href="mailto:teambradley@gmail.com">teambradley@gmail.com</a>
-					</p>
-					<p>&copy; Team Bradley 2021. INC.</p>
+							<button
+								type="button"
+								class="list-group-item list-group-item-action"
+								data-toggle="collapse"
+							>
+								<span class="toggle-btn collapse show">
+									Lesson 9
+									<i class="fas fa-chevron-down fa-sm"></i>
+									<p class="time">30:00</p>
+								</span>
+								<span class="toggle-btn collapse">
+									Lesson 9
+									<i class="fas fa-chevron-up fa-sm"></i>
+									<p class="time">30:00</p>
+								</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</footer>
+		</section>
 
-    </section>
+		<!-- Footer -->
+		<section id="Footer">
+			<footer class="text-muted mt-5" style="background-color: white">
+				<div class="container p-5">
+					<p>Need assistance? <a href="#">Click here</a></p>
+					<div class="d-flex justify-content-between">
+						<p>
+							For more inquiries, please email
+							<a href="mailto:teambradley@gmail.com">teambradley@gmail.com</a>
+						</p>
+						<p>&copy; Team Bradley 2021. INC.</p>
+					</div>
+				</div>
+			</footer>
+		</section>
 
-    <script src="javascript.js"></script> 
-    <script src="/GLOBALS/Global.js"></script>
-    
-</body>
+		<script src="javascript.js"></script>
+		<script src="/GLOBALS/Global.js"></script>
+	</body>
 </html>

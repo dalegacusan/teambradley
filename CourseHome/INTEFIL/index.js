@@ -34,12 +34,12 @@ const INTEFIL = {
 		{
 			eventDate: "February 14 4:00 AM",
 			eventName: "Activity 8: Wikang Filipino",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		},
 		{
 			eventDate: "May 12 11:59 PM",
 			eventName: "Quiz #1: Culture",
-			dropboxLink: "#"
+			dropboxLink: "/Drop-box/Drop-box.html"
 		}
 	],
 	nextSynchronousSession: {
