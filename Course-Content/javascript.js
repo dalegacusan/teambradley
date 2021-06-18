@@ -116,7 +116,6 @@ function PauseTime() {
 	h.textContent = hour.value + ":";
 	m.textContent = minute.value + ":";
 	s.textContent = second.value;
-
 }
 
 start.addEventListener('click', function () {
