@@ -227,3 +227,4 @@ const displaySubjectInformation = () => {
 	displayCourseInstructor();
 	displayUpcomingEvents();
 }
+
