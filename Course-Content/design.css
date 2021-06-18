@@ -26,9 +26,10 @@ h3 {
 }
 .ul {
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 14px;
 	list-style-type: none;
 	padding: 20px;
+	list-style-type: circle;
 }
 .ul li {
 	padding-top: 5px;
