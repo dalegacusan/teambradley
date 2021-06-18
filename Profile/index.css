@@ -1,0 +1,7 @@
+table td {
+	padding: 10px 20px !important;
+}
+
+table td:hover {
+	cursor: pointer !important;
+}

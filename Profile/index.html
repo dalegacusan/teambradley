@@ -13,7 +13,7 @@
 			crossorigin="anonymous"
 		/>
 
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="./index.css" />
 		<link rel="stylesheet" href="../GLOBALS/styles.css" />
 
 		<title>Profile - LMS</title>
@@ -100,13 +100,17 @@
 										class="dropdown-menu"
 										aria-labelledby="navbarDropdownMenuLink"
 									>
-									<li class="dropdown-menu-item">
-                                        <a class="dropdown-item" href="/Profile/index.html">My Profile</a>
-                                    </li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li class="dropdown-menu-item">
-                                        <a class="dropdown-item" href="/Login/Login.html">Logout</a>
-                                    </li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="/Profile/index.html"
+												>My Profile</a
+											>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+										<li class="dropdown-menu-item">
+											<a class="dropdown-item" href="/Login/Login.html"
+												>Logout</a
+											>
+										</li>
 									</ul>
 								</li>
 							</ul>
@@ -207,114 +211,55 @@
 					<div style="background-color: #fff; padding: 30px 40px">
 						<p style="font-size: 20px" class="fw-bold mb-4">Current Courses</p>
 
-						<!-- Table -->
-						<div class="container">
-							<!-- Header Row -->
-							<div class="row border-top border-bottom pt-2 pb-2">
-								<div class="col text-center">
-									<span class="fw-bold">Course Name</span>
-								</div>
-								<div class="col text-center">
-									<span class="fw-bold">Instructor</span>
-								</div>
-								<div class="col text-center">
-									<span class="fw-bold">Grade</span>
-								</div>
-								<div class="col text-center">
-									<span class="fw-bold">Schedule</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>DSTALGO</span>
-								</div>
-								<div class="col text-center">
-									<span>Olivia Walter</span>
-								</div>
-								<div class="col text-center">
-									<span>1.5</span>
-								</div>
-								<div class="col text-center">
-									<span>TTHS</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>PEFORTS</span>
-								</div>
-								<div class="col text-center">
-									<span>Ted Rodriguez</span>
-								</div>
-								<div class="col text-center">
-									<span>3.12</span>
-								</div>
-								<div class="col text-center">
-									<span>MWF</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>CSBLIFE</span>
-								</div>
-								<div class="col text-center">
-									<span>Michael Fox</span>
-								</div>
-								<div class="col text-center">
-									<span>2.56</span>
-								</div>
-								<div class="col text-center">
-									<span>MTF</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>MANSTRA</span>
-								</div>
-								<div class="col text-center">
-									<span>Carlos De Mundo</span>
-								</div>
-								<div class="col text-center">
-									<span>2.05</span>
-								</div>
-								<div class="col text-center">
-									<span>M</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>ITINFRA</span>
-								</div>
-								<div class="col text-center">
-									<span>Ryan Cartano</span>
-								</div>
-								<div class="col text-center">
-									<span>3.87</span>
-								</div>
-								<div class="col text-center">
-									<span>MS</span>
-								</div>
-							</div>
-							<!-- Course Data Row -->
-							<div class="row border-top border-bottom pt-3 pb-3">
-								<div class="col text-center">
-									<span>INTEFIL</span>
-								</div>
-								<div class="col text-center">
-									<span>Brent Patrick</span>
-								</div>
-								<div class="col text-center">
-									<span>4.00</span>
-								</div>
-								<div class="col text-center">
-									<span>MTF</span>
-								</div>
-							</div>
-						</div>
+						<table class="table table-hover text-center">
+							<thead>
+								<tr style="background-color: #f8faff">
+									<th scope="col">Course Name</th>
+									<th scope="col">Instructor</th>
+									<th scope="col">Grade</th>
+									<th scope="col">Schedule</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr onClick="window.location='/CourseHome/DSTALGO/index.html'">
+									<td class="fw-bold">DSTALGO</td>
+									<td>Olivia Walter</td>
+									<td>1.5</td>
+									<td>TTHS</td>
+								</tr>
+
+								<tr onClick="window.location='/CourseHome/PEFORTS/index.html'">
+									<td class="fw-bold">PEFORTS</td>
+									<td>Ted Rodriguez</td>
+									<td>3.12</td>
+									<td>MWF</td>
+								</tr>
+								<tr onClick="window.location='/CourseHome/CSBLIFE/index.html'">
+									<td class="fw-bold">CSBLIFE</td>
+									<td>Michael Fox</td>
+									<td>2.56</td>
+									<td>MTF</td>
+								</tr>
+								<tr onClick="window.location='/CourseHome/MANSTRA/index.html'">
+									<td class="fw-bold">MANSTRA</td>
+									<td>Carlos De Mundo</td>
+									<td>2.05</td>
+									<td>M</td>
+								</tr>
+								<tr onClick="window.location='/CourseHome/ITINFRA/index.html'">
+									<td class="fw-bold">ITINFRA</td>
+									<td>Ryan Cartano</td>
+									<td>3.87</td>
+									<td>MS</td>
+								</tr>
+								<tr onClick="window.location='/CourseHome/INTEFIL/index.html'">
+									<td class="fw-bold">INTEFIL</td>
+									<td>Brent Patrick</td>
+									<td>4.00</td>
+									<td>MTF</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
