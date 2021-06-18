@@ -39,6 +39,27 @@ let displayCalendarCourseName = () => {
 
 }
 
+const renderHomePage = () => {
+	const courseNameSection = localStorage.getItem("courseNameSection");
+
+	if (courseNameSection === "DSTALGO OTI003 20214") {
+		window.location.replace("/CourseHome/DSTALGO/index.html");
+	} else if (courseNameSection === "PEFORTS OTI004 21980") {
+		window.location.replace("/CourseHome/PEFORTS/index.html");
+	} else if (courseNameSection === "CSBLIFE OTO000 201904") {
+		window.location.replace("/CourseHome/CSBLIFE/index.html");
+	} else if (courseNameSection === "MANSTRA OTP012 202012") {
+		window.location.replace("/CourseHome/MANSTRA/index.html");
+	} else if (courseNameSection === "ITINFRA OT0112 201918") {
+		window.location.replace("/CourseHome/ITINFRA/index.html");
+	} else if (courseNameSection === "INTEFIL ISD890 202289") {
+		window.location.replace("/CourseHome/INTEFIL/index.html");
+	} else {
+		window.location.replace("/Dashboard/index.html");
+	}
+
+}
+
 // Calendar
 let calendar = document.querySelector('.calendar')
 
